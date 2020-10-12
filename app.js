@@ -14,7 +14,7 @@ const Meeting = require('./models/meeting');
 
 mongoose.set('useFindAndModify', false);
 //connect to mongodb
-mongoose.connect('mongodb://localhost:27017/meetingdb');
+mongoose.connect('mongodb://18.221.248.76:27017/meetingdb');
 //on connection
 mongoose.connection.on('connected',()=>{
     console.log('connected to db engine');
@@ -154,8 +154,7 @@ console.log('today:'+today);
 
             var transporter = nodemailer.createTransport({
                 service: 'gmail.com',
-                host: "smtp.ethereal.gmail",
-                port: 587,
+               
              secure: false,
                     auth: {
                         user: 'amrmuthu10@gmail.com',
