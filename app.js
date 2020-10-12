@@ -14,7 +14,7 @@ const Meeting = require('./models/meeting');
 
 mongoose.set('useFindAndModify', false);
 //connect to mongodb
-mongoose.connect('mongodb://18.221.248.76:27017/meetingdb');
+mongoose.connect('mongodb://15.206.66.224:27017/meetingdb');
 //on connection
 mongoose.connection.on('connected',()=>{
     console.log('connected to db engine');
